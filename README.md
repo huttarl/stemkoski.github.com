@@ -21,11 +21,12 @@ Finally, the results of experimentation can be exported in a couple of useful fo
 software, whether for graphical display (triangulated mesh) or more abstract computational geometry
 (VRML maybe).
 
-My motivation is to produce logistically sound and aesthetically pleasing topologically-spherical grids 
-for games that are traditionally planar, like slitherlink puzzles [http://krazydad.com/slitherlink/variety.php].
+My motivation is to produce logistically sound, and aesthetically pleasing, topologically-spherical graphs 
+for games that are traditionally planar, like [slitherlink puzzles](http://krazydad.com/slitherlink/variety.php).
 But I discovered, en route to that, a need for a web-based tool for experimenting with operations on
-polyhedra. There are some already, and some of them are far more extensive than what I hope to do here,
-but most of them are either Java applets (and therefore difficult to run in modern browsers), desktop apps
+polyhedra. There are some already, and [some of them are far more extensive](https://en.wikipedia.org/wiki/TopMod)
+than what I hope to do here,
+but most of them I found were either Java applets (and therefore difficult to run in modern browsers), desktop apps
 (with attendant cross-platform issues), not free, limited to a single operation, or some combination of those.
 
 This app is built on Lee Stemkowski's examples, http://stemkoski.github.io/Three.js/Topology-Data.html and
