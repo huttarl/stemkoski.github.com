@@ -32,3 +32,12 @@ but most of them I found were either Java applets (and therefore difficult to ru
 This app is built on Lee Stemkowski's examples, http://stemkoski.github.io/Three.js/Topology-Data.html and
 http://stemkoski.github.io/Three.js/Polyhedra.html. Those apps contain base polyhedron data, conversion of that data
 to Three.js meshes for display, and topological data structures for understanding Three.js geometries.
+
+Wait ... I just discovered http://levskaya.github.io/polyhedronisme/
+That does most of what I had in mind, and more.
+It uses a typed recipe instead of a more GUI input approach, but that's ok.
+However, it doesn't seem to implement gyro correctly ... e.g. a gyrated cube (recipe "gC") doesn't look the same in polyHédronisme as it does at https://en.wikipedia.org/wiki/Conway_polyhedron_notation#/media/File:Pentagonalicositetrahedronccw.jpg
+In fact, in polyHédronisme it doesn't even look like the faces are planar.
+And trying to reproduce Hart's sculpture [Roads Untaken](http://www.georgehart.com/sculpture/roads-untaken.html), [using recipe "eptI"](http://fennetic.tumblr.com/post/72960263404/roads-untaken-by-george-hart-the-shape-is-an),
+we don't get anything like his sculpture.
+Is this just a problem with the 'g' operator, that could be fixed with a pull request? I guess I can create a bug report for it and see if anything happens. Maybe there's some misunderstanding on my part, or an intrinsic limitation that Hart glossed over?
