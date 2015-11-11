@@ -1,6 +1,6 @@
 # Polyhedron operations workshop
 
-## Status: Still in initial development
+## Status: Probably won't be needed anymore.
 
 The idea here is a web-based (convex) polyhedron lab - a place to perform operations and transformations,
 like truncation, cantellation, and subdivision, on polyhedra and see the results.
@@ -36,10 +36,5 @@ to Three.js meshes for display, and topological data structures for understandin
 Wait ... I just discovered http://levskaya.github.io/polyhedronisme/
 That does most of what I had in mind, and more.
 It uses a typed recipe instead of a more GUI input approach, but that's ok.
-However, it doesn't seem to implement gyro correctly ... e.g. a gyrated cube (recipe "gC") doesn't look the same in polyHédronisme as it does at https://en.wikipedia.org/wiki/Conway_polyhedron_notation#/media/File:Pentagonalicositetrahedronccw.jpg
-In fact, in polyHédronisme it doesn't even look like the faces are planar.
-And trying to reproduce Hart's sculpture [Roads Untaken](http://www.georgehart.com/sculpture/roads-untaken.html), [using recipe "eptI"](http://fennetic.tumblr.com/post/72960263404/roads-untaken-by-george-hart-the-shape-is-an),
-we don't get anything like his sculpture.
-Is this just a problem with the 'g' operator, that could be fixed with a pull request? I guess I can create a bug report for it and see if anything happens. Maybe there's some misunderstanding on my part, or an intrinsic limitation that Hart glossed over?
 
-I've submitted an issue (https://github.com/levskaya/polyhedronisme/issues/3), which could lead to some further enlightment, but for now, it seems sufficient to sprinkle 'A' or 'An' into the recipe whenever it starts deviating from convex polyhedra with planar faces. So the Roads Untaken polyhedron becomes 'AeA3ptI'. Nice!
+You do have to sprinkle 'AN' and 'CN' at various points in the recipe to make sure you end up with convex solids and planar faces. See issue https://github.com/levskaya/polyhedronisme/issues/3 So the Roads Untaken polyhedron becomes 'AeA3ptI'. Looks nice!
